@@ -1,11 +1,11 @@
 let x = 0;
-let abc= 0;
+let checker= 0;
+
 let btns = document.querySelectorAll(".btn");
 let value = document.getElementById("value");
 
-
 function makingReset(){
-    if(abc==0){
+    if(checker==0){
         const button = document.createElement('button');
             button.className = 'btn reset';
             button.innerText = 'Reset';
@@ -14,19 +14,18 @@ function makingReset(){
                 value.style.color = "white";
                 value.innerText = x;
                 document.body.removeChild(button);
-                abc=0;
+                checker=0;
             });
         document.body.appendChild(button);
-    abc=1;
+    checker=1;
     }
 }
 
-
-
-
 btns.forEach(function(btn) {
     btn.addEventListener("click", function(e) {
+        
         const types = e.currentTarget.classList;
+        
         if (types.contains("decrease")) {
             x--;
             makingReset();
@@ -39,7 +38,6 @@ btns.forEach(function(btn) {
         
         if (x > 0) {
             value.style.color = "green";
-        
         } else if (x < 0) {
             value.style.color = "red";
         } else if (x==0){
