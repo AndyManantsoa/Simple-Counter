@@ -22,6 +22,8 @@ function makingReset(){
 }
 
 
+
+
 btns.forEach(function(btn) {
     btn.addEventListener("click", function(e) {
         const types = e.currentTarget.classList;
