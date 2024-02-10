@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(24, 9, 95);
+}
+
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maindiv h1{
+    color: white;
+    font-size:60px;
+    padding: 40px;
+}
+.maindiv #value{
+    font-size: 100px;
+    color: white;
+    padding: 30px;
+}
+
+.maindiv .btns{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+
+button{
+    font-size: 30px;
+    margin: 0 10px;
+    border: 2px solid ;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    background-color:dodgerblue;
+}
